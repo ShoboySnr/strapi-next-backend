@@ -7,7 +7,7 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": false,
     "comment": ""
   },
   "attributes": {
@@ -32,6 +32,9 @@
     },
     "slug": {
       "type": "string"
+    },
+    "published_at": {
+      "type": "date"
     }
   }
 }
