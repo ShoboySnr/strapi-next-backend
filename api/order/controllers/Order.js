@@ -59,7 +59,7 @@ module.exports = {
     const charge = await stripe.charges.create({
       // Transform cents to dollars.
       amount: amount * 100,
-      currency: 'usd',
+      currency: 'ngn',
       description: `Order ${new Date()} by ${ctx.state.user._id}`,
       source: token,
     });
