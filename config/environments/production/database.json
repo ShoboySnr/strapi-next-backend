@@ -9,10 +9,12 @@
         "port": "${process.env.DATABASE_PORT || 27017}",
         "database": "${process.env.DATABASE_NAME || 'strapi'}",
         "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}",
-        "ssl": "${process.env.DATABASE_SSL || fale}"
+        "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
-      "options": {}
+      "options": {
+        "authenticationDatabase": "${process.env.DATABASE_NAME || 'production'}",
+        "ssl": false
+      }
     }
   }
 }
