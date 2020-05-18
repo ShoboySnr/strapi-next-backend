@@ -28,6 +28,9 @@
     },
     "token": {
       "type": "string"
+    },
+    "user": {
+      "type": "string"
     }
   }
 }

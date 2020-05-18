@@ -219,6 +219,7 @@ input editOrderInput {
   amount: Int
   state: String
   token: String
+  user: String
 }
 
 input editRestaurantInput {
@@ -323,6 +324,7 @@ type Order {
   amount: Int
   state: String
   token: String
+  user: String
 }
 
 input OrderInput {
@@ -332,6 +334,7 @@ input OrderInput {
   amount: Int
   state: String
   token: String
+  user: String
 }
 
 type Query {
