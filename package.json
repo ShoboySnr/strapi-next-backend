@@ -31,14 +31,14 @@
   },
   "author": {
     "name": "shoboysnr",
-    "email": "",
-    "url": ""
+    "email": "oluwadamilareshobowale@gmail.com",
+    "url": "https://techwithdee.com"
   },
   "maintainers": [
     {
       "name": "shoboysnr",
-      "email": "",
-      "url": ""
+      "email": "oluwadamilareshobowale@gmail.com",
+      "url": "https://techwithdee.com"
     }
   ],
   "strapi": {
@@ -47,7 +47,7 @@
   },
   "engines": {
     "node": ">= 10.0.0",
-    "npm": "*"
+    "npm": ">= 6.0.0"
   },
   "license": "MIT"
 }
