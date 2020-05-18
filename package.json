@@ -1,0 +1,53 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "setup": "cd admin && npm run setup",
+    "start": "node server.js",
+    "strapi": "node_modules/strapi/bin/strapi.js",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "knex": "latest",
+    "lodash": "^4.17.5",
+    "mysql": "2.18.1",
+    "slugify": "^1.4.0",
+    "strapi": "3.0.0-alpha.26.2",
+    "strapi-hook-bookshelf": "3.0.0-alpha.26.2",
+    "strapi-hook-knex": "3.0.0-alpha.26.2",
+    "strapi-utils": "3.0.0-alpha.26.2",
+    "stripe": "^8.52.0"
+  },
+  "author": {
+    "name": "shoboysnr",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "shoboysnr",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "strapi": {
+    "packageManager": "npm",
+    "uuid": "13b38ce6-38d0-4004-a8a1-d224bac7f0a8"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "license": "MIT"
+}

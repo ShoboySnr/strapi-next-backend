@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog",
+    "description": "This content type. displays articles on your website."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "categories": {
+      "model": "blogcategories",
+      "via": "blogs"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": "date"
+    }
+  }
+}

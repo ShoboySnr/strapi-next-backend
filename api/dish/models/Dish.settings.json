@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "dishes",
+  "info": {
+    "name": "dish",
+    "description": "List if all dishes in restaurants"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "restaurant": {
+      "model": "restaurant",
+      "via": "dishes"
+    }
+  }
+}

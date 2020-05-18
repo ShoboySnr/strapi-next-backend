@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": "Information about the customer's order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "dishes": {
+      "type": "json"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    }
+  }
+}
