@@ -2,9 +2,9 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-bookshelf",
+      "connector": "strapi-hook-mongoose",
       "settings": {
-        "client": "mysql",
+        "client": "mongo",
         "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
         "port": "${process.env.DATABASE_PORT || 27017}",
         "database": "${process.env.DATABASE_NAME || 'strapi'}",
