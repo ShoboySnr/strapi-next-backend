@@ -23,6 +23,7 @@
     "lodash": "^4.17.5",
     "mysql": "2.18.1",
     "slugify": "^1.4.0",
+    "sqlite3": "^4.2.0",
     "strapi": "3.0.0-alpha.26.2",
     "strapi-hook-bookshelf": "3.0.0-alpha.26.2",
     "strapi-hook-knex": "3.0.0-alpha.26.2",
