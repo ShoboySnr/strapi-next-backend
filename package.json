@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "knex": "latest",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.21",
     "mysql": "2.18.1",
     "slugify": "^1.4.0",
     "sqlite3": "^4.2.0",
